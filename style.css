@@ -656,6 +656,14 @@ body {
 }
 @media screen and (max-width: 640px) {
     .Main {
+        .About {
+            h1 {
+                font-weight: bold !important;
+            }
+            h2 {
+                font-weight: bold !important;
+            }
+        }
         .Images {
             #circle1 {
                 right: 150px !important;
@@ -699,6 +707,7 @@ body {
             gap: 15px !important;
             span {
                 font-size: 12px !important;
+                font-weight: bold !important;
             }
         }
         a {
@@ -834,7 +843,7 @@ body {
         div {
             gap: 10px !important;
             span {
-                font-size: 10px !important;
+                font-size: 11px !important;
             }
         }
         a {
