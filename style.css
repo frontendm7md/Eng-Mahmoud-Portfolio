@@ -43,7 +43,7 @@ body {
             span {
                 color: white;
                 font-size: 14px;
-                font-weight: 100;
+                font-weight: bold;
                 cursor: pointer;
             }
         }
@@ -75,9 +75,6 @@ body {
                 align-items: flex-start;
                 flex-direction: column;
                 gap: 5px;
-                h1, h2 {
-                    font-weight: 100;
-                }
                 h2{
                     color: #7fe57a;
                     -webkit-text-stroke: 0.5px black;
@@ -309,6 +306,98 @@ body {
                     font-size: small;
                 }
                 button {
+                    padding: 10px 20px;
+                    color: white;
+                    background-color: #7fe57a;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    &:hover {
+                        background-color: #9fe68e;
+                    }
+                }
+            }
+        }
+    }
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card {
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            .title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 10px;
+                h2 {
+                    color: #7fe57a;
+                    -webkit-text-stroke: 0.5px black;
+                }
+                p {
+                    color: #555;
+                    font-size: small;
+                }
+            }
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    outline: none;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    resize: none;
+                }
+                input:focus {
+                    border-color: #7fe57a;
+                    box-shadow: 0 0 5px rgba(127, 229, 122, 0.5);
+                }
+                .frame {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    input {
+                        width: 48%;
+                    }
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+            }
+            .btns {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                button {
+                    width: 48%;
                     padding: 10px 20px;
                     color: white;
                     background-color: #7fe57a;
