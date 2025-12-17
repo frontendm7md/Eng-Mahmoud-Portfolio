@@ -279,6 +279,7 @@ body {
             gap: 20px;
             .course-card {
                 width: 48.8%;
+                height: -webkit-fill-available;
                 padding: 20px 15px;
                 border-radius: 10px;
                 animation: appear3 linear;
@@ -287,7 +288,7 @@ body {
                 background-color: white;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: flex-start;
                 gap: 10px;
                 img {
@@ -300,12 +301,50 @@ body {
                     color: #7fe57a;
                     -webkit-text-stroke: 0.5px black;
                 }
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 5px;
+                    span {
+                        color: #777;
+                        font-size: small;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 5px;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
                 p {
                     width: 100%;
                     color: #555;
                     font-size: small;
                 }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 5px;
+                    span {
+                        font-weight: bold;
+                        color: #333;
+                        font-size: small;
+                    }
+                    li {
+                        color: #555;
+                        font-size: small;
+                        margin-left: 15px;
+                    }
+                }
                 button {
+                    width: 100%;
                     padding: 10px 20px;
                     color: white;
                     background-color: #7fe57a;
