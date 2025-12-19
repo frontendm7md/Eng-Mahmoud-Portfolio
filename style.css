@@ -272,6 +272,15 @@ body {
             color: #7fe57a;
             -webkit-text-stroke: 0.5px black;
         }
+        p {
+            width: 100%;
+            color: #555;
+            font-size: small;
+            a {
+                color: #3764b9;
+                text-decoration: underline;
+            }
+        }
         #course-list {
             display: flex;
             justify-content: center;
